@@ -7,7 +7,7 @@ import os
 ASK_NAME, ASK_EMAIL = range(2)
 user_data = {}
 
-TOKEN = 7703194563:AAEc0DU_QdCwFCc2b5h_G37v5YwmZa3XWD0
+TOKEN = os.environ.get("TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Привет! 👋 Спасибо за покупку в StylePro! Давай познакомимся 😊\nКак тебя зовут?")
